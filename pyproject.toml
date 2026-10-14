@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skatdds"
+version = "0.1.0"
+description = "Double-dummy (perfect information) solver for the card game Skat"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Henning Sperr" }]
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: C++",
+    "Programming Language :: Python :: 3",
+    "Topic :: Games/Entertainment",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+package-dir = { "" = "python" }
+packages = ["skatdds"]
